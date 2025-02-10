@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int idade, ingresso, desconto;
+    printf("Informe a sua idade:\n");
+    scanf("%d", &idade);
+    printf("Informe o valor do ingresso:\n");
+    scanf("%d", &ingresso);
+
+    if (idade > 60) {
+        desconto = ingresso * 0.3;  
+        ingresso = ingresso - desconto;
+        printf("Valor total a pagar: %d\n", ingresso);
+    } else {
+        desconto = ingresso * 0.1;  
+        ingresso = ingresso - desconto;
+        printf("Valor total a pagar: %d\n", ingresso);
+    }
+
+    system("pause");
+    return 0;
+}
