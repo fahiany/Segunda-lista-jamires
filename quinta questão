@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float celcius, kelvin;
+    printf("Informe a temperatura:\n");
+    scanf("%f", &celcius);
+
+    if (celcius < 20) {
+        celcius = (celcius * 9) / 5 + 32; 
+        printf("A temperatura em Fahrenheit é: %.2f\n", celcius);
+    } else {
+        kelvin = celcius + 273.15; 
+        printf("A temperatura em Kelvin é: %.2f\n", kelvin);
+    }
+
+    system("pause");
+    return 0;
+}
